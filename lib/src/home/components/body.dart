@@ -12,9 +12,10 @@ class Body extends StatelessWidget {
             "Want to \nGo Solar?".toUpperCase(),
             style: Theme.of(context).textTheme.headline2.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: Colors.blue
+                  color: Colors.white
                 ),
           ),
+          SizedBox(width: 250.0, child: Divider(color: Colors.white)),
           Text(
             "Let us all switch on the Sun,\nthe Bright and Right alternative",
             style: TextStyle(

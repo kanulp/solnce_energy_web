@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:solnce_energy_web/src/services/services_home.dart';
 
 import 'menu_item.dart';
 
@@ -23,7 +24,7 @@ class CustomAppBar extends StatelessWidget {
         children: <Widget>[
           Image.asset(
             "assets/images/logo.png",
-            height: 25,
+            height: 50,
             alignment: Alignment.topCenter,
           ),
           SizedBox(width: 5),
@@ -34,11 +35,18 @@ class CustomAppBar extends StatelessWidget {
           Spacer(),
           MenuItem(
             title: "Home",
-            press: () {},
+            press: () {
+
+            },
           ),
           MenuItem(
             title: "Services",
-            press: () {},
+            press: () {
+               Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => ServicesHomePage()),
+        );
+            },
           ),
           MenuItem(
             title: "Blog",
