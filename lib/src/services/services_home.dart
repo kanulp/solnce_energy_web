@@ -20,7 +20,7 @@ class ServicesHomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             
-            // // It will cover 1/3 of free spaces
+            SizedBox(height: 50.0,),
             Text('OUR',style: TextStyle(color: Colors.black,fontSize: 40.0),),
             Text('SERVICES',style: TextStyle(color: Colors.red,fontSize: 50.0,fontWeight: FontWeight.bold),),
             // Spacer(
@@ -37,6 +37,8 @@ class ServicesHomePage extends StatelessWidget {
                   Text('For household that want less electricity bill and use green energy'),
                 ],
               ),
+              VerticalDivider(width: 2, color: Colors.green,thickness: 2.0),
+              Divider(color: Colors.green,thickness: 5.0,),
               Column(
                 children: [
                   Image.asset('assets/images/services/service_comm.png'),
@@ -45,6 +47,7 @@ class ServicesHomePage extends StatelessWidget {
                 ],
               ),
             ],),
+            Divider(color: Colors.green,thickness: 2.0,indent: 150.0,endIndent: 100.0,),
              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -57,6 +60,7 @@ class ServicesHomePage extends StatelessWidget {
                   Text('We have tie ups with different banks'),
                 ],
               ),
+              VerticalDivider(color: Colors.green,thickness: 2.0,indent: 150.0,endIndent: 100.0),
               Column(
                 children: [
                   Image.asset('assets/images/services/service_cleaning.png'),
